@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intresseanmälan för lägenhet - Natur hem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Natur hem</h1>
+      <nav>
+        <ul>
+          <li><img id="logofoto" src="img/logotyp1.webp" alt="logofoto" /></li>
+          <li><a href="start.html">Startsida</a></li>
+          <li>
+            <a href="Lediga.html" class="active">Lediga boenden</a>
+            <ul>
+              <li><a href="4rum.html">Fyra rum</a></li>
+              <li><a href="3rum.html">Tre rum</a></li>
+              <li><a href="2rum.html">Två rum</a></li>
+              <li><a href="rum.html">Ett rum</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Intresseanmälan för lägenhet</h2>
+        <p class="subtitle">
+          Fyll i formuläret för att anmäla ditt intresse för lediga lägenheter.
+        </p>
+
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Personuppgifter</legend>
+
+            <div class="form-group">
+              <label for="fullname">För- och efternamn </label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                placeholder="Nada Mariam"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="personnummer">Personnummer (ÅÅÅÅMMDD-XXXX)</label>
+              <input
+                type="text"
+                id="personnummer"
+                name="personnummer"
+                required
+                placeholder="19900101-1234"
+              />
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="email">E-postadress</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="namn@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefonnummer</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="070-123 45 67"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ekonomi och Sysselsättning</legend>
+
+            <div class="form-group">
+              <label for="employment">Sysselsättning</label>
+              <select id="employment" name="employment" required>
+                <option value="">Välj ett alternativ...</option>
+                <option value="tillsvidare">Tillsvidareanställd</option>
+                <option value="tidsbegränsad">Tidsbegränsad anställning</option>
+                <option value="eget-foretag">Egen företagare</option>
+                <option value="studerande">Studerande</option>
+                <option value="pensionar">Pensionär</option>
+                <option value="arbetssökande">Arbetssökande/A-kassa</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="income">Bruttoinkomst per månad</label>
+              <input
+                type="number"
+                id="income"
+                name="income"
+                required
+                placeholder="t.ex. 25000"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Önskemål om bostad</legend>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="rooms">Antal rum </label>
+                <select id="rooms" name="rooms" required>
+                  <option value="" disabled selected>Välj antal rum...</option>
+                  <option value="1">1 ROK</option>
+                  <option value="2">2 ROK</option>
+                  <option value="3">3 ROK</option>
+                  <option value="4">4+ ROK</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="moving-date">Önskat inflyttningsdatum</label>
+              <input type="date" id="moving-date" name="moving-date" />
+            </div>
+
+            <div class="form-group-checkbox">
+              <input type="checkbox" id="pets" name="pets" />
+              <label for="pets">Jag har husdjur</label>
+            </div>
+
+            <div class="form-group-checkbox">
+              <input type="checkbox" id="smoke" name="smoke" />
+              <label for="smoke">Jag är rökare</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="message">Kort beskrivning om dig själv</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              placeholder="Berätta lite om vem du är och vilka som ska bo i lägenheten..."
+            ></textarea>
+          </div>
+
+          <div class="form-group-checkbox gdpr">
+            <input type="checkbox" id="gdpr" name="gdpr" required />
+            <label for="gdpr"
+              >Jag intygar att alla mina lämnade uppgifter är sanna.</label
+            >
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Skicka intresseanmälan
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Kontakta oss:</h3>
+        <ul>
+          <li><strong>E-post:</strong> sh225ci@student.lnu.se</li>
+          <li><strong>Ring oss:</strong> 0793280398</li>
+        </ul>
+        <p><b> Öppet:</b> mån-fre kl. 9-17</p>
+      </div>
+      <div>
+        <h3>Var finns vi:</h3>
+        <p><b>Address:</b> Universitetsplatsen 1, 352 52 Växjö</p>
+        <h4>Karta</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7908.839242623512!2d14.819049925206622!3d56.85265041395721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1793229664384!5m2!1sen!2sse"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
